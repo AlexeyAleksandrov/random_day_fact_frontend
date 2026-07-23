@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://username.github.io/random_day_fact_frontend",
+  "homepage": "https://alexeyaleksandrov.github.io/random_day_fact_frontend",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
