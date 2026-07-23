@@ -1,68 +1,99 @@
 body {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  min-height: 100vh;
-  padding: 40px 20px;
+  background: #fafaf8;
+  color: #1a1a1a;
 }
 
 .app {
-  max-width: 600px;
+  max-width: 680px;
   margin: 0 auto;
-  color: white;
+  padding: 0 20px 60px;
 }
 
-h1 {
+.app-header {
+  border-bottom: 3px solid #1a1a1a;
+  padding: 36px 0 18px;
   text-align: center;
   margin-bottom: 0;
 }
 
-.subtitle {
-  text-align: center;
-  margin-top: 8px;
-  opacity: 0.9;
+h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+  color: #1a1a1a;
 }
 
-.card {
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 16px;
-  padding: 24px;
-  margin-top: 20px;
+.subtitle {
+  font-family: Arial, sans-serif;
+  font-size: 0.75rem;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 8px;
+}
+
+.section {
+  border-bottom: 1px solid #ddd;
+  padding: 32px 0;
 }
 
 h2 {
-  margin-top: 0;
+  font-family: Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #999;
+  margin-bottom: 18px;
 }
 
 button {
-  background: white;
-  color: #764ba2;
+  background: #1a1a1a;
+  color: #fafaf8;
   border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-size: 16px;
+  padding: 11px 22px;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
   cursor: pointer;
-  font-weight: 600;
+  transition: background 0.15s;
 }
 
 button:hover {
-  opacity: 0.9;
+  background: #e8521a;
 }
 
 button:disabled {
-  opacity: 0.6;
+  background: #aaa;
   cursor: not-allowed;
 }
 
-input {
-  padding: 10px;
-  border-radius: 8px;
-  border: none;
-  font-size: 16px;
-  margin-right: 10px;
+input[type="date"] {
+  border: 1px solid #ccc;
+  border-right: none;
+  padding: 10px 14px;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  background: white;
+  color: #1a1a1a;
+  outline: none;
+}
+
+input[type="date"]:focus {
+  border-color: #1a1a1a;
+}
+
+.date-row {
+  display: flex;
+  align-items: stretch;
 }
 
 .result {
-  margin-top: 16px;
-  padding: 12px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
+  margin-top: 18px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #1a1a1a;
+  border-left: 3px solid #e8521a;
+  padding-left: 16px;
 }

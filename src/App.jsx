@@ -32,31 +32,35 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Факт дня</h1>
-      <p className="subtitle">Шуточный генератор исторических событий</p>
+      <div className="app-header">
+        <h1>Факт дня</h1>
+        <p className="subtitle">Шуточный генератор исторических событий</p>
+      </div>
 
-      <div className="card">
+      <div className="section">
         <h2>Приветствие</h2>
         <button onClick={getHello}>Поздороваться с сервером</button>
         {hello && <p className="result">{hello}</p>}
       </div>
 
-      <div className="card">
+      <div className="section">
         <h2>Случайная шутка</h2>
         <button onClick={getJoke}>Рассказать шутку</button>
         {joke && <p className="result">{joke}</p>}
       </div>
 
-      <div className="card">
+      <div className="section">
         <h2>Узнать факт</h2>
-        <input
-          type="date"
-          value={date}
-          onChange={(e) => setDate(e.target.value)}
-        />
-        <button onClick={getFact} disabled={!date || loading}>
-          {loading ? "Загрузка..." : "Получить факт"}
-        </button>
+        <div className="date-row">
+          <input
+            type="date"
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+          />
+          <button onClick={getFact} disabled={!date || loading}>
+            {loading ? "Загрузка..." : "Получить факт"}
+          </button>
+        </div>
         {fact && <p className="result">{fact}</p>}
       </div>
     </div>
